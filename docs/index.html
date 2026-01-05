@@ -423,6 +423,79 @@
             50% { transform: scale(1.1); }
         }
 
+        /* Crop Infographic Section */
+        .crop-infographic-section {
+            background: linear-gradient(135deg, #dcfce7 0%, #fef3c7 100%);
+            padding: 60px 0;
+            width: 100%;
+        }
+        .crop-infographic-container {
+            max-width: 1400px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .crop-infographic-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .crop-infographic-content h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+        }
+        .crop-infographic-content p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .crop-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .crop-feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+            color: var(--text-dark);
+            font-size: 1rem;
+        }
+        .crop-feature-list li:last-child {
+            border-bottom: none;
+        }
+        .crop-feature-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .crop-infographic-visual img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border: 3px solid var(--primary);
+        }
+        @media (max-width: 900px) {
+            .crop-infographic-grid {
+                grid-template-columns: 1fr;
+            }
+            .crop-infographic-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
@@ -479,6 +552,39 @@
             <div class="trust-badge">🇮🇳 भारत में बना</div>
             <div class="trust-badge">📴 ऑफलाइन काम करे</div>
             <div class="trust-badge">🗣️ 12 भाषाएं</div>
+        </div>
+    </section>
+
+    <!-- Crop Infographic -->
+    <section class="crop-infographic-section">
+        <div class="crop-infographic-container">
+            <div class="crop-infographic-grid">
+                <div class="crop-infographic-content">
+                    <h2>🌾 AI से फसल सुरक्षा</h2>
+                    <p>फसल रक्षक ऐप AI तकनीक से आपकी फसल की बीमारी पहचानता है और सही इलाज बताता है। 50 लाख+ किसानों का भरोसा।</p>
+                    <ul class="crop-feature-list">
+                        <li>
+                            <span class="crop-feature-icon">📸</span>
+                            <span>फोटो खींचो - बीमार पत्ते की तस्वीर लें</span>
+                        </li>
+                        <li>
+                            <span class="crop-feature-icon">🧠</span>
+                            <span>बीमारी पहचानो - AI 3 सेकंड में बताएगा</span>
+                        </li>
+                        <li>
+                            <span class="crop-feature-icon">💊</span>
+                            <span>इलाज पाओ - सही दवाई और मात्रा जानें</span>
+                        </li>
+                        <li>
+                            <span class="crop-feature-icon">🌾</span>
+                            <span>फसल बचाओ - 40% तक नुकसान रोकें</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="crop-infographic-visual">
+                    <img src="infographic-crop.png" alt="फसल रक्षक AI फसल सुरक्षा">
+                </div>
+            </div>
         </div>
     </section>
 
